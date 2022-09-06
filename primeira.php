@@ -200,7 +200,7 @@
                     }
                      <?php } ?>
                   </script>
-                   <div id="curve_chart" style="border-radius:12%;align-items:center;padding-top:1em;padding-left:1em;width: 1100px; height: 600px"></div>
+                   <div id="curve_chart" style="border-radius:12%;align-items:center;padding-top:1em;padding-left:20em;width: 1100px; height: 600px"></div>
         
     </section>
         

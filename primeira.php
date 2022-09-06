@@ -7,6 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./imagens/logo.png">
+    <style>
+        h1{
+            color: white;
+        }
+    </style>
     <!----======== CSS ======== -->
     <link rel="stylesheet" href="./estilos/style2.css">
      

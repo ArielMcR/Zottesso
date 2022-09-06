@@ -154,6 +154,14 @@
                 </div>
                
             <div class="activity-data">
+                 <?php
+                    $sql_tipo = "SELECT valorLiquido, Mês FROM vendas";
+                    $roda = $con->query($sql_tipo);
+                    if ($roda->num_rows == 0) {
+                        echo "<h1>Nenhum dado cadastrado</h1>";
+                    } else {
+                    
+                    ?>
                 <script src="./javascript/script.js"></script>
                 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
                   <script type="text/javascript">
@@ -185,6 +193,7 @@
               
                       chart.draw(data, options);
                     }
+                     <?php } ?>
                   </script>
                    <div id="curve_chart" style="border-radius:12%;align-items:center;padding-top:1em;padding-left:1em;width: 1100px; height: 600px"></div>
         

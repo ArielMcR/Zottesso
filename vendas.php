@@ -11,166 +11,153 @@
     <link rel="stylesheet" href="./estilos/style2.css">
     <link rel="icon" href="./imagens/logo.png">
     <style> 
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
 .container{
-    position: relative;
-    max-width: 900px;
+  max-width: 1500px;
+  width: auto;
+  background-color: #fff;
+  padding: 100px 30px 50px 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+ 
+}
+.container .title{
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+.container .title::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+.content form .user-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+form .user-details .input-box{
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+form .input-box span.details{
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.user-details .input-box input{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+  border-color: #9b59b6;
+}
+ form .gender-details .gender-title{
+  font-size: 20px;
+  font-weight: 500;
+ }
+ form .category{
+   display: flex;
+   width: 80%;
+   margin: 14px 0 ;
+   justify-content: space-between;
+ }
+ form .category label{
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+ }
+ form .category label .dot{
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background: #d9d9d9;
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+ #dot-1:checked ~ .category label .one,
+ #dot-2:checked ~ .category label .two,
+ #dot-3:checked ~ .category label .three{
+   background: #9b59b6;
+   border-color: #d9d9d9;
+ }
+ form input[type="radio"]{
+   display: none;
+ }
+ form .button{
+   height: 45px;
+   margin: 35px 0
+ }
+ form .button input{
+   height: 100%;
+   width: 100%;
+   border-radius: 5px;
+   border: none;
+   color: #fff;
+   font-size: 18px;
+   font-weight: 500;
+   letter-spacing: 1px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   background: linear-gradient(135deg, #201b2c, #9b59b6);
+ }
+ form .button input:hover{
+  background: linear-gradient(-135deg, #201b2c, #9b59b6);
+  }
+ @media(max-width: 584px){
+ .container{
+  max-width: 100%;
+}
+form .user-details .input-box{
+    margin-bottom: 15px;
     width: 100%;
-    border-radius: 6px;
-    padding: 30px;
-    margin: 0 15px;
-    background-color: #fff;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-}
-.container header{
-    position: relative;
-    font-size: 20px;
-    font-weight: 600;
-    color: #333;
-}
-.container header::before{
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -2px;
-    height: 3px;
-    width: 27px;
-    border-radius: 8px;
-    background-color: #4070f4;
-}
-.container form{
-    position: relative;
-    margin-top: 16px;
-    min-height: 490px;
-    background-color: #fff;
-    overflow: hidden;
-}
-.container form .form{
-    position: absolute;
-    background-color: #fff;
-    transition: 0.3s ease;
-}
-
-form.secActive .form.first{
-    opacity: 0;
-    pointer-events: none;
-    transform: translateX(-100%);
-}
-.container form .title{
-    display: block;
-    margin-bottom: 8px;
-    font-size: 16px;
-    font-weight: 500;
-    margin: 6px 0;
-    color: #333;
-}
-.container form .fields{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-form .fields .input-field{
-    display: flex;
-    width: calc(100% / 3 - 15px);
+  }
+  form .category{
+    width: 100%;
+  }
+  .content form .user-details{
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+  .user-details::-webkit-scrollbar{
+    width: 5px;
+  }
+  }
+  @media(max-width: 459px){
+  .container .content .category{
     flex-direction: column;
-    margin: 4px 0;
-}
-.input-field label{
-    font-size: 12px;
-    font-weight: 500;
-    color: #2e2e2e;
-}
-.input-field input, select{
-    outline: none;
-    font-size: 14px;
-    font-weight: 400;
-    color: #333;
-    border-radius: 5px;
-    border: 1px solid #aaa;
-    padding: 0 15px;
-    height: 42px;
-    margin: 8px 0;
-}
-.input-field input :focus,
-.input-field select:focus{
-    box-shadow: 0 3px 6px rgba(0,0,0,0.13);
-}
-.input-field select,
-.input-field input[type="date"]{
-    color: #707070;
-}
-.input-field input[type="date"]:valid{
-    color: #333;
-}
-.container form button, .backBtn{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 45px;
-    max-width: 200px;
-    width: 100%;
-    border: none;
-    outline: none;
-    color: #fff;
-    border-radius: 5px;
-    margin: 25px 0;
-    background-color: #4070f4;
-    transition: all 0.3s linear;
-    cursor: pointer;
-}
-.container form .btnText{
-    font-size: 14px;
-    font-weight: 400;
-}
-form button:hover{
-    background-color: #265df2;
-}
-form button i,
-form .backBtn i{
-    margin: 0 6px;
-}
-form .backBtn i{
-    transform: rotate(180deg);
-}
-form .buttons{
-    display: flex;
-    align-items: center;
-}
-form .buttons button , .backBtn{
-    margin-right: 14px;
+  }
 }
 
-@media (max-width: 750px) {
-    .container form{
-        overflow-y: scroll;
-    }
-    .container form::-webkit-scrollbar{
-       display: none;
-    }
-    form .fields .input-field{
-        width: calc(100% / 2 - 15px);
-    }
-}
-
-@media (max-width: 550px) {
-    form .fields .input-field{
-        width: 100%;
-    }
-}
     </style>
      
     <!----===== Iconscout CSS ===== -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
-    <title>Admin Dashboard Panel</title>
+
     
 </head>
 <body>
     <nav>
         <div class="logo-name">
             <div class="logo-image">
-                <img src="logo.png" alt="">
+                <img src="./imagens/logo2.png" alt="">
             </div>
 
             <span class="logo_name">Gerenciamento</span>
@@ -182,33 +169,33 @@ form .buttons button , .backBtn{
                     <i class="uil uil-estate"></i>
                     <span class="link-name">Dahsboard</span>
                 </a></li>
-                <li><a href="#">
+                <li><a href="vendas.php">
                     <i class="uil uil-shopping-cart"></i>
                     <span class="link-name">Vendas</span>
                 </a></li>
-                <li><a href="#">
+                <li><a href="graficos.php">
                     <i class="uil uil-chart"></i>
                     <span class="link-name">Gráficos</span>
                 </a></li>
-                <li><a href="#">
+                <li><a href="cadastrarFuncionarios.php">
                     <i class="uil uil-user-md"></i>
                     <span class="link-name">Cadastrar Funcionário</span>
                 </a></li>
-                <li><a href="#">
+                <li><a href="funcionarios.php">
                     <i class="uil uil-chat-info"></i>
-                    <span class="link-name">Demitir Funcionário</span>
+                    <span class="link-name">Funcionário</span>
                 </a></li>
             </ul>
             
             <ul class="logout-mode">
-                <li><a href="#">
+                <li><a href="sair.php">
                     <i class="uil uil-signout"></i>
                     <span class="link-name">Logout</span>
                 </a></li>
 
                 <li class="mode">
                     <a href="#">
-                        <i class="uil uil-moon"></i>
+                        <i class="uil uil-brightness"></i>
                     <span class="link-name">Modo Claro</span>
                 </a>
 
@@ -229,64 +216,85 @@ form .buttons button , .backBtn{
                 <input type="text" placeholder="Pesquisar...">
             </div>
         </div>
-        <header>Registration</header>
-    <div class="container">
-        <form action="testevendas" method="get">
-         <div class="form first">
-        <div class="details personal">
-            <span class="title">Personal Details</span>
-
-            <div class="fields">
-                <div class="input-field">
-                    <label>Full Name</label>
-                    <input type="text" placeholder="Enter your name" required>
+        <div class="container">
+            <div class="title">Cadastrar Vendas</div>
+                <div class="content">
+                    <form action="testevendas.php" method="post"autocomplete="on">
+                        <div class="user-details">
+                            <div class="input-box">
+                                <span class="details">Mês do Ano</span>
+                                <input type="text" placeholder="Digite o mês da venda" required list="mesdoano" name="mês">
+                                <datalist id="mesdoano">
+                                    <option>Janeiro</option>
+                                    <option>Fevereiro</option>
+                                    <option>Março</option>
+                                    <option>Abril</option>
+                                    <option>Maio</option>
+                                    <option>Junho</option>
+                                    <option>Julho</option>
+                                    <option>Agosto</option>
+                                    <option>Setembro</option>
+                                    <option>Outubro</option>
+                                    <option>Novembro</option>
+                                    <option>Dezembro</option>
+                                    <option></option>
+                                </datalist>
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Valor Liquído</span>
+                                <input type="text" placeholder="Digite o valor liquído do mês" required name="valorLiquido" min="0">
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Valor Bruto</span>
+                                <input type="number" placeholder="Digite o valor bruto do mês" name="valorBruto" required min="0">
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Ano</span>
+                                <input type="number" placeholder="Digite o ano" required name="ano">
+                            </div>
+                        </div>
+                            <div class="button">
+                            <input type="submit" value="Cadastrar">
+                            </div>
+                    </form>
+                    <div class="vendas"> 
+                     <table style="text-aling:center;" id="customers">
+                        <h1 class="title">VENDAS CADASTRADAS</h1>
+                          <th>ID</th>
+                          <th>Valor Bruto</th> 
+                          <th>Valor Liquído</th>  
+                          <th>Mês</th>
+                          <th>Ano</th>
+                          <th>Alterar</th>
+                          <th>Excluir</th>
+                        <?php 
+                         $sql_tipo = "SELECT * FROM vendas ORDER BY ano";
+                         $resulta = $con->query($sql_tipo);
+                         while($linha = $resulta->fetch_assoc()) {
+                         ?>
+                          <tr>
+                          <td><?=$linha["id"]?></td>
+                          <td><?=number_format($linha["valorBruto"], 2, ',', '.')?></td>
+                          <td><?=number_format($linha["valorLiquido"], 2, ',', '.')?></td>
+                          <td><?=$linha["Mês"]?></td>
+                          <td><?=$linha["ano"]?></td>
+                          <td><a class="link" href="alterar.php?id=<?=$linha["id"]?>">Alterar</a></td>
+                          <td><a class="link-excluir" href="excluir.php?id=<?=$linha["id"]?>">Excluir</a></td>
+                          </tr>
+                         <?php
+                         }
+                         ?>
+                         </table>
+                     </div>
+                         
                 </div>
+         </div>
 
-                <div class="input-field">
-                    <label>Date of Birth</label>
-                    <input type="date" placeholder="Enter birth date" required>
-                </div>
-
-                <div class="input-field">
-                    <label>Email</label>
-                    <input type="text" placeholder="Enter your email" required>
-                </div>
-
-                <div class="input-field">
-                    <label>Mobile Number</label>
-                    <input type="number" placeholder="Enter mobile number" required>
-                </div>
-
-                <div class="input-field">
-                    <label>Mês de Venda</label>
-                    <select required>
-                        <option disabled selected>Selecione o Mês</option>
-                        <option>Janeiro</option>
-                        <option>Fevereiro</option>
-                        <option>Março</option>
-                    </select>
-                </div>
-
-                <div class="input-field">
-                    <label>Occupation</label>
-                    <input type="text" placeholder="Enter your ccupation" required>
-                </div>
-            </div>
-        </div> 
-            <div class="buttons">
-                <button type="submit" class="sumbit">
-                    <span class="btnText">Submit</span>
-                    <i class="uil uil-navigator"></i>
-                </button>
-            </div>
-    </div>
-           
-            </form>
-        </div>
-    </div>
 
     </section>
-     <script src="script2.js"></script>
-        
+     <script src="./javascript/script.js"></script>
+   
+    
+    
 </body>
 </html>

@@ -19,9 +19,10 @@ if(!$result){
     exit(0);
 
 } else{
-    setcookie("usuario", "$username");
-    setcookie("senha", "$senha");
-    header("Location: primeira.php");
+    session_start();
+    $_SESSION['usuario'] = $username;
+    $_SESSION['senha'] = $senha;
+    header("Location: comecePorAqui.php");
     exit(0);
 }
 

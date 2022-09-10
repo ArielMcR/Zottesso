@@ -242,7 +242,6 @@ form .user-details .input-box{
                                     <option>Segurança</option>
                                     <option>TI</option>
                                     <option>Suporte Técnico</option>
-                                    <option>Teste</option>
                                 </datalist>
                             </div>
                             <div class="input-box">

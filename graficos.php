@@ -1,7 +1,6 @@
 <?php require_once("validaregistro.php") ?> 
 
 <!DOCTYPE html>
-<!--=== Coding by CodingLab | www.codinglabweb.com === -->
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -146,8 +145,7 @@ form .user-details .input-box{
 }
 
     </style>
-     
-    <!----===== Iconscout CSS ===== -->
+
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     
 </head>

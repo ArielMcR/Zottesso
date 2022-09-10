@@ -1,7 +1,6 @@
 <?php require_once("validaregistro.php") ?> 
 
 <!DOCTYPE html>
-<!--=== Coding by CodingLab | www.codinglabweb.com === -->
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">

@@ -144,12 +144,9 @@ form .user-details .input-box{
 }
 
     </style>
-     
-    <!----===== Iconscout CSS ===== -->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
-    <title>Vendas</title>
-    
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+ 
 </head>
 <body>
     <nav>

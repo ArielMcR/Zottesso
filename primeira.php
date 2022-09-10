@@ -67,7 +67,7 @@
             <ul class="nav-links">
                 <li><a href="primeira.php">
                     <i class="uil uil-estate"></i>
-                    <span class="link-name">Dahsboard</span>
+                    <span class="link-name">Dashboard</span>
                 </a></li>
                 <li><a href="vendas.php">
                     <i class="uil uil-shopping-cart"></i>

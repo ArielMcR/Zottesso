@@ -160,27 +160,27 @@ form .user-details .input-box{
         </div>
 
         <div class="menu-items">
-            <ul class="nav-links">
-                <li><a href="primeira.php">
-                    <i class="uil uil-estate"></i>
-                    <span class="link-name">Dahsboard</span>
-                </a></li>
-                <li><a href="vendas.php">
-                    <i class="uil uil-shopping-cart"></i>
-                    <span class="link-name">Vendas</span>
-                </a></li>
-                <li><a href="#">
-                    <i class="uil uil-chart"></i>
-                    <span class="link-name">Gráficos</span>
-                </a></li>
-                <li><a href="cadastrarFuncionarios.php">
-                    <i class="uil uil-user-md"></i>
-                    <span class="link-name">Cadastrar Funcionário</span>
-                </a></li>
-                <li><a href="funcionarios.php">
-                    <i class="uil uil-chat-info"></i>
-                    <span class="link-name">Funcionário</span>
-                </a></li>
+          <ul class="nav-links">
+                  <li><a href="primeira.php">
+                      <i class="uil uil-estate"></i>
+                      <span class="link-name">Dashboard</span>
+                  </a></li>
+                  <li><a href="vendas.php">
+                      <i class="uil uil-shopping-cart"></i>
+                      <span class="link-name">Vendas</span>
+                  </a></li>
+                  <li><a href="graficos.php">
+                      <i class="uil uil-chart"></i>
+                      <span class="link-name">Gráficos</span>
+                  </a></li>
+                  <li><a href="cadastrarFuncionarios.php">
+                      <i class="uil uil-user-md"></i>
+                      <span class="link-name">Cadastrar Funcionário</span>
+                  </a></li>
+                  <li><a href="funcionarios.php">
+                      <i class="uil uil-chat-info"></i>
+                      <span class="link-name">Funcionário</span>
+                  </a></li>
             </ul>
             
             <ul class="logout-mode">

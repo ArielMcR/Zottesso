@@ -13,4 +13,3 @@ if ($result){
     }
     $con->close();
     ?>
-

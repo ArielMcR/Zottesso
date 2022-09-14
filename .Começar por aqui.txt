@@ -1,0 +1,1 @@
+Fala professor, tudo bem? Professor a proposta do meu sistema vai estar em um vídeo que será apresentado depois de se cadastrar um usuário novo. Além disso, deixei uma base de dados pronta no sql,com um usuário cadastrado login e senha admin.

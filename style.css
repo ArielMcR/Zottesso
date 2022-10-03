@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+:root {
+    --amarelo-claro: hsl(44, 100%, 58%);
+    --amarelo: hsl(44, 100%, 48%);
+    --amarelo-escuro: hsl(44, 100%, 38%);
+    --azul-claro: hsl(201, 100%, 41%);
+    --azul: hsl(201, 100%, 31%);
+    --azul-escuro: hsl(201, 100%, 21%);
+    --cinza-claro: #F1F1F1;
+    --cinza: #BDBDBD;
+    --cinza-escuro: #525252;
+    --verde-claro: hsl(130, 54%, 50%);
+    --verde: hsl(130, 54%, 40%);
+    --verde-escuro: hsl(130, 54%, 30%);
+    --vermelho-claro: hsl(358, 78%, 55%);
+    --vermelho: hsl(358, 78%, 45%);
+    --vermelho-escuro: hsl(358, 78%, 35%);
+}
+
+.topo{
+    background-color: var(--verde);
+    padding: 5px;
+    color:white;
+}
+.menu{
+    background-color: var(--cinza-claro);
+    width: 82,5rem;
+    height: 30px;
+}
+.menu ul{
+    display: flex;
+    list-style: none;
+    padding-top: 5px;
+}
+    
+.menu a{
+    color: var(--cinza-escuro);
+    text-decoration: none;
+    padding-left: 1rem;
+    border-radius: 0px 0px 5px 0px solid;
+}
+
+.menu a:hover{
+    color: var(--verde-escuro);
+}
+.topo-menu{
+    padding-left: 1px;
+    margin: 2px;
+}
+
+h1{
+    padding-top: 15px;
+    padding-left: 15px;
+}
+h4{
+    padding-bottom: 35px;
+    padding-left: 15px;
+}
+.links ul .lista a{
+    border-bottom: 3px solid var(--verde);
+    background: var(--cinza-claro);
+    padding: 0.80rem 0;
+    font-weight: 700;
+    width: 20%;
+    color: var(--cinza-escuro);
+    text-decoration: none;
+}
+
+
+.links ul li a:hover{
+    background-color: var(--cinza);
+}
+
+.links ul .lista{
+    display: flex;
+    flex: 0 0 100%;
+    margin: 0 !important;
+    padding: 0.5rem;
+}
+
+.alunoOnline a{
+    color:#007bff;
+    text-decoration: none;
+    display: flex;
+    padding: 5px;
+    width: 30%;
+}

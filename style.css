@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
 *{
     margin: 0;
     padding: 0;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
 }
+
 :root {
     --amarelo-claro: hsl(44, 100%, 58%);
     --amarelo: hsl(44, 100%, 48%);
@@ -37,7 +42,7 @@
     padding-top: 5px;
 }
     
-.menu a{
+.menu a{    
     color: var(--cinza-escuro);
     text-decoration: none;
     padding-left: 1rem;
@@ -48,40 +53,51 @@
     color: var(--verde-escuro);
 }
 .topo-menu{
+    font-family: 'Rubik', sans-serif;
     padding-left: 1px;
     margin: 2px;
 }
 
 h1{
+    font-family: 'Josefin Sans', sans-serif;
     padding-top: 15px;
     padding-left: 15px;
 }
 h4{
+    font-family: 'Josefin Sans', sans-serif;
     padding-bottom: 35px;
     padding-left: 15px;
 }
-.links ul .lista a{
+
+.links ul .lista {
+    font-family: 'Source Sans Pro', sans-serif;
     border-bottom: 3px solid var(--verde);
     background: var(--cinza-claro);
-    padding: 0.80rem 0;
+    /* padding: 0.80rem 0; */
     font-weight: 700;
+    height: 30px;
     width: 20%;
+    color: var(--cinza-escuro);
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 3px;
+    padding: 1rem;
+}
+
+.links ul .lista a {
+    font-family: 'Source Sans Pro', sans-serif;
     color: var(--cinza-escuro);
     text-decoration: none;
 }
 
 
-.links ul li a:hover{
+.links ul .lista:hover{
     background-color: var(--cinza);
 }
 
-.links ul .lista{
-    display: flex;
-    flex: 0 0 100%;
-    margin: 0 !important;
-    padding: 0.5rem;
+.alunoOnline{
+    padding-top: 25px;
 }
-
 .alunoOnline a{
     color:#007bff;
     text-decoration: none;

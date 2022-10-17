@@ -1,4 +1,4 @@
-<?php require_once("validaregistro.php"); ?>
+<?php require_once("validaregistro.php"); require_once("conn.php");?>
 
 <!DOCTYPE HTML>
 <html lang="pt-BR">
@@ -136,12 +136,18 @@
                     <label for="ano" class="ano">Escolha o ano</label>
                     <input type="number" list="ano" class="input-ano" name="anoVenda">
                     <datalist id="ano">
-                        <option value="2022" selected></option>
-                        <option value="2021"></option>
-                        <option value="2020"></option>
-                        <option value="2019"></option>
-                        <option value="2018"></option>
-                        <option value="2017"></option>
+                        <?php
+                        $pegarAno = "SELECT MAX(ano) as anoMaior, MIN(ano) as anoMenor FROM vendas";
+                        $executarAno = $conn->query($pegarAno);
+                        while ($row = mysqli_fetch_assoc($executarAno)) {
+                            $anoMaior = $row['anoMaior'];
+                            $anoMenor = $row['anoMenor'];
+                            for ($anoMenor; $anoMenor <= $anoMaior; $anoMenor++) {
+                                echo "<option value = " . $anoMenor . "></option>";
+                            }
+                        }
+
+                        ?>
                     </datalist>
                     <input type="submit" class="input-button">
                 </form>
@@ -213,6 +219,7 @@
                             echo '<tr>';
                             echo '<td>R$'. number_format($liquido, 2, ',', '.') .'</td>';
                             echo '</tr>'; 
+
                               }
                              
                             ?>
@@ -286,7 +293,7 @@
                     <?php } ?>
                     </script>
                     <div id="curve_chart"
-                        style="border-radius:12%;align-items:center;padding-top:1em;padding-left:1em;width: 1000px; height: 600px">
+                        style="border-radius:12%;align-items:center;padding-top:1em;padding-left:1em;width: 96%; height: 600px">
                     </div>
 
     </section>

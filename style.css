@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+:root {
+    --amarelo-claro: hsl(44, 100%, 58%);
+    --amarelo: hsl(44, 100%, 48%);
+    --amarelo-escuro: hsl(44, 100%, 38%);
+    --azul-claro: hsl(201, 100%, 41%);
+    --azul: hsl(201, 100%, 31%);
+    --azul-escuro: hsl(201, 100%, 21%);
+    --cinza-claro: #F1F1F1;
+    --cinza: #BDBDBD;
+    --cinza-escuro: #525252;
+    --verde-claro: hsl(130, 54%, 50%);
+    --verde: hsl(130, 54%, 40%);
+    --verde-escuro: hsl(130, 54%, 30%);
+    --vermelho-claro: hsl(358, 78%, 55%);
+    --vermelho: hsl(358, 78%, 45%);
+    --vermelho-escuro: hsl(358, 78%, 35%);
+}
+
+.container {
+    box-shadow: 15px black;
+}
+
+.busca__texto_input {
+    border: 2px solid var(--cinza-escuro);
+    border-radius: .25rem;
+    padding: 5px;
+    vertical-align: middle;
+    width: 100%
+}
+
+#buscar {
+    background-color: var(--verde);
+    color: rgb(0, 0, 0)
+}
+
+.fa-search {
+    color: white;
+}
+
+.fa-search:hover {
+    color: black;
+}
+
+.busca__link_sei {
+    color: var(--cinza-escuro);
+}
+
+.busca__link_sei a {
+    color: white;
+    background-color: var(--verde);
+    border-radius: 5px;
+    padding-bottom: 0.2rem;
+}
+
+.busca__link_sei a:hover {
+    color: white;
+}
+
+#logo-ifpr {
+    max-width: 282px;
+}
+
+.navbar {
+    background-color: var(--verde-escuro);
+    height: 40px;
+}
+
+.navbar .lista1 {
+    list-style: none;
+    display: inline;
+    padding-left: 50px;
+}
+
+.navbar .lista1 a {
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 20;
+    font-family: 'Opens Sans', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar .lista1 a:hover {
+    border-bottom: 3px solid var(--verde)
+}
+
+.fa-sharp {
+    color: white;
+}
+
+
+#main-menu a {
+    font-family: 'Roboto', sans-serif;
+    text-transform: bold;
+    text-decoration: none;
+    width: 120%;
+    color: var(--verde-escuro);
+}
+
+#main-menu .fa-users,
+.fa-laptop,
+.fa-comments,
+.fa-chart-pie {
+    color: var(--verde-escuro);
+}
+
+#main-menu .BarLinks {
+    font-size: 15px;
+    text-justify: auto;
+}
+
+#main-menu .SpanBarLinks {
+    font-size: 12px;
+    text-justify: auto;
+}
+
+
+
+hr.linha {
+    width: 120%;
+    border-top: 2px solid var(--verde-escuro);
+}
+
+.topo {
+    background-color: var(--verde);
+    padding: 5px;
+    color: white;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 0,
+        'GRAD' 0,
+        'opsz' 0
+}
+
+
+.menu {
+    background-color: var(--cinza-claro);
+    width: 82, 5rem;
+    height: 30px;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    padding-top: 5px;
+}
+
+.menu .areaAluno {
+    font-family: 'opens sans', sans-serif;
+}
+
+.menu a {
+    color: var(--cinza-escuro);
+    padding-left: 1rem;
+    border-radius: 0px 0px 5px 0px solid;
+}
+
+.topo {
+    border-radius: 0px 0px 15px 15px solid;
+}
+
+.menu a:hover {
+    color: var(--verde-escuro);
+    text-decoration: none;
+}
+
+.topo-menu {
+    padding-left: 1px;
+    margin: 0px;
+    margin-left: 2px;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 15px;
+
+}
+
+h4 {
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 35px;
+
+}
+
+.links ul a {
+    border-bottom: 3px solid var(--verde);
+    color: var(--cinza-escuro);
+    text-decoration: none;
+    width: 280px;
+    height: 55px;
+    margin: 10px 2px;
+    padding: 0.8rem;
+    padding-top: 15px;
+}
+
+.fa-angle-right {
+    float: right;
+    padding-left: 2px;
+    padding-top: 5px;
+}
+
+.ifpr-icon {
+    background: url(img/ifpr-icon.png) center no-repeat;
+    padding: 12px;
+    background-size: contain;
+    margin: 0.1rem;
+    float: left;
+}
+
+.links .btn {
+    background-color: var(--cinza-claro);
+    border-radius: 0;
+}
+
+.links .ancora {
+    text-transform: bold;
+}
+
+.links {
+    padding-left: 15px;
+    padding-top: 2px;
+}
+
+.links ul a:hover {
+    border-bottom: 3px solid var(--verde);
+    background-color: var(--cinza);
+}
+
+.links .lista {
+    display: inline-block;
+    list-style: none;
+
+}
+
+.alunoOnline {
+    font-family: 'opens sans', sans-serif;
+    padding-top: 15px;
+}
+
+.alunoOnline a {
+    color: #007bff;
+    text-decoration: none;
+    display: flex;
+    padding-top: 5px;
+    width: 80%;
+}
+
+.alunoOnline .biblioteca {
+    padding-top: 30px;
+}

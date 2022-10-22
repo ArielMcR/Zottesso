@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Área do Aluno - Campus Paranavaí</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="font/css/all.min.css">
+    <link rel="icon" href="https://paranavai.ifpr.edu.br/wp-content/themes/ifpr-theme-1.03/assets/images/favicon.gif">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row justify-content-between menu-row">
+
+            <!-- Sidebar Esquerdo Mobile -->
+            <button class="menu-esquerdo__toggle col-3 d-sm-block d-md-none" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="sidebar__esquerda" aria-expanded="false"
+                aria-label="Menu esquerdo toggle">
+                <i class="menu-btn-toggle fas fa-bars"></i>
+            </button>
+            <!-- Fim Sidebar Esquerdo Mobile -->
+
+            <!-- Marca IFPR -->
+            <a href="https://paranavai.ifpr.edu.br" class="col-6 col-md-4 logo__link">
+                <img id="logo-ifpr" src="img/ifpr-logo.png" alt="">
+                </img>
+            </a>
+            <!-- Fim Marca IFPR -->
+            <!-- Busca -->
+            <button class="col-3 d-sm-block d-md-none busca-btn" type="button" data-toggle="collapse"
+                data-target="#busca" aria-controls="busca" aria-expanded="false" aria-label="Busca toggle">
+                <i class="fas fa-search text-center busca__icone_mobile align-self-center"></i>
+            </button>
+
+            <div id="busca" class="col-8 d-none d-md-block">
+                <form role="search" method="get" class="search-form text-right" action="">
+                    <label class="mb-0">
+                        <input type="search" class="busca__texto_input" placeholder="Pesquisar por" value="" name="s" />
+                    </label>
+                    <button type="submit" class="btn" id="buscar" value="Submit"><i class="fas fa-search"></i></button>
+                </form>
+                <p class="mb-0 text-right busca__link_sei">Procure <span class="font-weight-bold">documentos
+                        institucionais</span> no <a
+                        href="https://sei.ifpr.edu.br/sei/modulos/pesquisa/md_pesq_processo_pesquisar.php?acao_externa=protocolo_pesquisar&acao_origem_externa=protocolo_pesquisar&id_orgao_acesso_externo=0"><span
+                            class="badge badge-ifpr">SEI!<i class="fas fa-external-link-alt"></i></span></a></p>
+            </div>
+        </div>
+        <div class="navbar">
+            <ul class="ul">
+                <li class="lista1">
+                    <a href="http://">Ínicio</a>
+                </li>
+                <li class="lista1">
+                    <a href="http://">Protocolo Online</a>
+                </li>
+                <li class="lista1">
+                    <a href="http://">Nossos Cursos
+                    </a>
+                </li>
+                <li class="lista1">
+                    <a href="http://">Encceja/Enem</a>
+                </li>
+                <li class="lista1">
+                    <a href="http://">Comissão Local Covid-19</a>
+                </li>
+                <li class="lista1">
+                    <a href="http://">Fale Conosco</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="row">
+            <div class="col-2">
+                <div id="main-menu" class="list-group-flush">
+                    <a href="#sub-menu" class="list-group-item" data-toggle="collapse" data-parent="#main-menu">
+                        Institucional
+                        <span class="caret"></span></a>
+                    <div class="collapse list-group-level1" id="sub-menu">
+                        <a href="#" class="list-group-item" data-parent="#sub-menu">Sub Item 1</a>
+                        <a href="#" class="list-group-item" data-parent="#sub-menu">Suba Item 2</a>
+                        <a href="#sub-sub-menu" class="list-group-item" data-toggle="collapse"
+                            data-parent="#sub-menu">Sub Item 3 <span class="caret"></span></a>
+                        <div class="collapse list-group-level2" id="sub-sub-menu">
+                            <a href="#" class="list-group-item" data-parent="#sub-sub-menu">Sub Sub Item 1</a>
+                            <a href="#" class="list-group-item" data-parent="#sub-sub-menu">Saub Sub Item 2</a>
+                            <a href="#" class="list-group-item" data-parent="#sub-sub-menu">Sub Sub Item 3</a>
+                        </div>
+                    </div>
+                    <a href="#" class="list-group-item">Acadêmico</a>
+
+                    <a href="#" class="list-group-item">Gestão e Administração</a>
+
+                    <a href="#" class="list-group-item">links</a>
+                    <hr class="linha">
+                    <i class="fas fa-users"></i>
+                    <a href="#" class="BarLinks">Página do Servidor</a>
+                    <br>
+                    <span class="SpanBarLinks">Informações sobre a vida funcional</span>
+                    <hr class="linha">
+                    <i class="fas fa-laptop"></i>
+                    <a href="#">Sistema</a>
+                    <br>
+                    <span class="SpanBarLinks"> Sistemas Acadêmicos, Administrativos e Helpdesk</span>
+                    <hr class="linha">
+                    <i class="fas fa-comments"></i>
+                    <a href="#">
+                        Observatório da Convivência</a>
+                    <br>
+                    <span class="SpanBarLinks">Ambiente escolar saudável</span>
+                    <hr class="linha">
+                    <i class="fas fa-chart-pie"></i>
+                    <a href="#">
+                        Portal da Transparência</a>
+                    <br>
+                    <span class="SpanBarLinks">Informações sobre gestão e gasto público</span>
+                </div>
+            </div>
+            <div class="col-10">
+                <div class="topo-menu">
+                    <div class="topo">
+                        <i class="fa-solid fa-house"></i>
+                        <a href="https://paranavai.ifpr.edu.br"></a> / <span class="areaAluno">Área do Aluno</span>
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="https://paranavai.ifpr.edu.br/aluno/aluno-online/">Aluno Online</a></li>
+                            <li><a href="https://paranavai.ifpr.edu.br/aluno/ano-letivo-2021/">Ano Letivo 2021</a>
+                            </li>
+                            <li><a href="https://paranavai.ifpr.edu.br/aluno/anos-letivos-anteriores/">Anos Letivos
+                                    Anteriores</a></li>
+                            <li><a href="https://paranavai.ifpr.edu.br/aluno/moodle/">Moodle IFPR</a></li>
+                            <li><a href="https://paranavai.ifpr.edu.br/aluno/planos-de-trabalho-docente/">Planos de
+                                    Trabalho Docente</a>
+                            </li>
+                            <li><a href="https://paranavai.ifpr.edu.br/aluno/professores/">Professores</a></li>
+                        </ul>
+                    </div>
+                    <!-- div da class top-menu -->
+                    <div class="text-Links">
+
+                        <h1>Área do Aluno</h1>
+                        <h4>Ano Letivo 2022</h4>
+
+                        <div class="links">
+
+                            <ul class="d-inline">
+                                <li class="lista">
+                                    <a class="btn ancora Calendário"
+                                        href="https://paranavai.ifpr.edu.br/wp-content/uploads/2022/03/CALENDARIO_2022_final_aprovado.pdf">
+                                        <span class="ifpr-icon"></span>
+                                        <span class="text-secundary"> Calendário Acadêmico 2022
+                                            <i class="fa-solid fa-angle-right"></i>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="lista">
+                                    <a class="btn ancora" href="https://ifprparanavai.edupage.org/timetable">
+                                        <span class="ifpr-icon"></span>
+                                        <i class="fa-solid fa-angle-right"></i>Grade de Horários
+                                    </a>
+                                </li>
+                                <li class="lista">
+                                    <a class="btn ancora" href="https://planif.ifpr.edu.br/index.planif">
+                                        <span class="ifpr-icon"></span>
+                                        <i class="fa-solid fa-angle-right"></i>
+                                        Horários de Atendimento
+                                    </a>
+                                </li>
+                                <li class="lista">
+                                    <a class="btn ancora"
+                                        href="https://paranavai.ifpr.edu.br/aluno/planos-de-trabalho-docente/">
+                                        <span class="ifpr-icon"></span>
+                                        <i class="fa-solid fa-angle-right"></i>Planos de Trabalho
+                                    </a>
+                                </li>
+                                <li class="lista">
+                                    <a class="btn ancora" href="https://paranavai.ifpr.edu.br/moodle/">
+                                        <span class="ifpr-icon"></span>
+                                        <i class="fa-solid fa-angle-right"></i> Moodle IFPR
+                                    </a>
+                                </li>
+                                <li class="lista">
+                                    <a class="btn ancora"
+                                        href="https://certificados.paranavai.ifpr.edu.br/verificar.jsf">
+                                        <span class="ifpr-icon"></span>
+                                        <i class="fa-solid fa-angle-right"></i>Certificados
+                                    </a>
+                                </li>
+                                <li class="lista">
+                                    <a class="btn ancora" href="https://cronos.paranavai.ifpr.edu.br/">
+                                        <span class="ifpr-icon"></span>
+                                        <i class="fa-solid fa-angle-right"></i> Cronos
+                                    </a>
+                                </li>
+                                <li class="lista">
+                                    <a class="btn ancora" href="https://paranavai.ifpr.edu.br/aluno-online/">
+                                        <span class="ifpr-icon"></span>
+                                        <i class="fa-solid fa-angle-right"></i>Aluno Online
+                                    </a>
+                                </li>
+                                <li class="lista">
+                                    <a class="btn ancora" href="https://paranavai.ifpr.edu.br/professores/">
+                                        <span class="ifpr-icon"></span>
+                                        <i class="fa-solid fa-angle-right"></i>Professores
+                                    </a>
+                                </li>
+                                <li class="lista">
+                                    <a class="btn ancora"
+                                        href="https://paranavai.ifpr.edu.br/aluno/anos-letivos-anteriores/">
+                                        <span class="ifpr-icon"></span>
+                                        <i class="fa-solid fa-angle-right"></i>Anos Letivos Anteriores
+                                    </a>
+                                </li>
+                                <li class="lista">
+                                    <a class="btn ancora" href="https://planif.ifpr.edu.br/index.planif">
+                                        <span class="ifpr-icon"></span>
+                                        <i class="fa-solid fa-angle-right"></i>Planos de Ensino
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div class="alunoOnline">
+
+                            <p><strong>Aluno Online</strong></p>
+                            <a href="https://paranavai.ifpr.edu.br/wp-content/uploads/2022/03/Orientações-para-Estudantes-–-Ano-Letivo-2022-Anexo-1.pdf"
+                                target="_blank">Orientações para Estudantes – Ano Letivo 2022</a>
+                            <a href="https://paranavai.ifpr.edu.br/wp-content/uploads/2022/03/Ensalamento-Ano-Letivo-2022-Anexo-2.pdf"
+                                target="_blank">Ensalamento Ano Letivo 2022</a>
+                            <a href="https://goo.gl/forms/ffIePlXiIlfgy7tm2">Solicitação de Carteirinha</a>
+                            <a href="https://paranavai.ifpr.edu.br/wp-content/uploads/2015/12/IIP2.pdf">Instrução
+                                Normativa
+                                Atividades Complementares</a>
+                            <a href="https://drive.google.com/drive/folders/1FSF8cUUSSUBJIdX15mbb8ezaOvR0dC2L?usp=sharing"
+                                target="_blank">
+                                <strong>Planos de Ensino/Dependência – Cursos Superiores</strong></a>
+                            <a href="https://drive.google.com/drive/u/1/folders/1QxBV8s2gjNNAQuzzEzA3rJuA4Zti2ShV"
+                                target="_blank"><strong>Planos de Ensino/Dependência – Cursos Técnicos</strong></a>
+                            <a href="https://paranavai.ifpr.edu.br/wp-content/uploads/2016/11/MANUAL-DO-ALUNO-2016.pdf">Manual
+                                do
+                                Aluno</a>
+                            <a href="https://paranavai.ifpr.edu.br/vagas-de-estagio/">Vagas de Estágio</a>
+                            <div class="biblioteca">
+                                <a href="https://paranavai.ifpr.edu.br/wp-content/uploads/2017/04/REGULAMENTO-GERAL-DA-BIBLIOTECA-DO-CAMPUS-PARANAVAÍ.pdf"
+                                    target="_blank">Regulamento da Biblioteca do Campus</a>
+                                <a
+                                    href="https://paranavai.ifpr.edu.br/wp-content/uploads/2022/04/Regulamento-Disciplinar-Discente.pdf">Regulamento
+                                    Disciplinar do Corpo Discente do IFPR – Campus Paranavaí</a>
+                                <!--div dos links da biblioteca e corpo de discente  -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- div da class col-10 -->
+                </div>
+                <!-- div da row -->
+            </div>
+            <!-- div do container -->
+        </div>
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
